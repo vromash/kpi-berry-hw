@@ -17,7 +17,7 @@ docker-compose down
 |Description|Method|Endpoint|Parametrs|Expected response|
 |-----------|------|--------|---------|-----------------|
 |List all readings|GET|/all-readings|none|id, timestamp, value of all readings
-|Get statistics|GET|/statistics|from=date&to=date|count, mean, variance, normal_dist, confidence_interval_start, confidence_interval_end, stationary 
+|Get statistics|GET|/statistics|from=YYYY-MM-DD&to=YYYY-MM-DD|count, mean, variance, normal_dist, confidence_interval_start, confidence_interval_end, stationary 
 |Get reading by id|GET|/reading/<:id>|none|id, timestamp, value of reading
 |Add reading|POST|/reading|value=float|id, timestamp, value of created reading
 |Edit reading by id|PUT|/reading/<:id>|value=float|id, timestamp, value of edited reading
